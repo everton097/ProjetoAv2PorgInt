@@ -9,8 +9,11 @@
   --valorant-logo-color: #ff4654;
   --link-color: #950101;
   --link-hover-color: #3D0000;
+  --nomeAgente-text-color: #FF0000;
 }
-
+.nomeAgenteColor{
+  color: var(--nomeAgente-text-color);
+}
 
 /* Cor da topbar*/
 .topnav {
