@@ -23,4 +23,4 @@ Vídeos com mais de 10 minutos receberão nota zero;
 Vídeos privados, links quebrados e situações similares que impeçam que o vídeo seja assistido receberão nota zero;
 O site estilizado com a paleta de cores padrão vale 50% da nota;
 O botão e o funcionamento que permite trocar para a paleta de cores escura vale 50% da nota.
-```# ProjetoAv2PorgInt
+```
