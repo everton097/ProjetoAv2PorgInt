@@ -115,7 +115,7 @@
     color: var(--link-hover-color);
   }
   /*Titulos h1, h2, h3 sendo centralizados e coloridos*/
-  h1, h2, h3{
+  h1{
     text-align: center;
     color: var(--h123-text-color);
   }
