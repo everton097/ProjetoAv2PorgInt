@@ -1,12 +1,15 @@
+/*URL paleta de cores DARK: https://colorhunt.co/palette/252830ff00003d0000eeeeee#justCreated
+URL paleta de cores LIGTH: https://colorhunt.co/palette/eeebddce12128100001b1717
+*/
 :root{
   --topBar-background-color: #252830;
   --topBar-background-color-active: #000000;
   --topBar-hover-background-color: #FF0000;
-  --topBar-text-color: #ffffff;
-  --topBar-solid-color: #ffffff;
+  --topBar-text-color: #EEEEEE;
+  --topBar-solid-color: #EEEEEE;
   --h123-text-color: #FF0000;
   --body-background-color: #252830f5;
-  --valorant-logo-color: #ff4654;
+  --valorant-logo-color: #EEEEEE;/*#ff4654;*/
   --link-color: #950101;
   --link-hover-color: #3D0000;
   --nomeAgente-text-color: #FF0000;
@@ -128,4 +131,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  /*Margem para o formulario do login*/
+  #loginPageMargin{
+    margin-top: 80px;
   }
