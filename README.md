@@ -1,4 +1,4 @@
-# Avaliação 01 de Programação para Internet I
+# Avaliação 02 de Programação para Internet I
 
 Este repositório serve para a avaliação 02 de programação para internet I.
 
