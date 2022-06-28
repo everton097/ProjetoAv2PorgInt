@@ -13,8 +13,55 @@ URL paleta de cores LIGTH: https://colorhunt.co/palette/eeebddce12128100001b1717
   --link-color: #950101;
   --link-hover-color: #3D0000;
   --nomeAgente-text-color: #FF0000;
+  --p-text-color: #ffff;
 }
-/*
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+p{
+  color: var(--p-text-color);
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.label{
+  background-color: #313236;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+.label .ball{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  height: 20px;
+  width: 20px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(22px);
+}
+/*Alterando a cor da lua*/
+.fa-moon{
+  color: #f1c40f;
+}
+/*Alterando a cor do sol*/
+.fa-sun{
+  color: #f39c12;
+}
 /*top bar //INICIO//*/
 .topnav {
   background-color: var(--topBar-background-color);
@@ -104,6 +151,12 @@ img.iconCentralizada{
 body {
   margin: 0px;
   background-color: var(--body-background-color);
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s linear;
+}
+body.dark{
+  background-color: #EEEEEE;
 }
 /*alterando cor dos links*/
 a{

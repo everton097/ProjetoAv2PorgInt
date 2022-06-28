@@ -1,0 +1,181 @@
+/*URL paleta de cores DARK: https://colorhunt.co/palette/252830ff00003d0000eeeeee#justCreated
+URL paleta de cores LIGTH: https://colorhunt.co/palette/eeebddce12128100001b1717
+*/
+:root{
+  --body-background-color: #cfcfcf;
+  --topBar-background-color: #a3a3a3;
+  --topBar-background-color-active: #ffff;
+  --topBar-text-color: #000000;
+  --topBar-solid-color: #000000;
+  --topBar-hover-background-color: #FF0000;
+  --h123-text-color: #FF0000;
+  --nomeAgente-text-color: #FF0000;
+  --link-color: #950101;
+  --link-hover-color: #3D0000;
+  --valorant-logo-color: #585858;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.label{
+  background-color: #313236;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  position: relative;
+  width: 50px;
+  height: 20px;
+}
+.label .ball{
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 4px;
+  height: 20px;
+  width: 20px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(22px);
+}
+
+.fa-moon{
+  color: #f1c40f;
+}
+.fa-sun{
+  color: #f39c12;
+}
+/*top bar //INICIO//*/
+.topnav {
+  background-color: var(--topBar-background-color);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-height: 30px;
+  max-height: 30px;
+  font-size: 17px;
+  align-items: center;
+  margin: 0;
+}
+/*Estilos nos links da TOPBAR*/
+.topnav a {
+  color: var(--topBar-text-color);
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  padding: 0px 10px 0px 10px;
+  margin: 0;
+}
+/*Cursor em cima dos menus*/
+.topnav a:hover {
+  background-color: var(--topBar-hover-background-color);
+  color: var(--topBar-text-color);
+  border-bottom: 2px solid var(--topBar-solid-color);
+  max-height: 25px;
+  min-height: 25px;
+  margin: 0;
+}
+/*Opção de ENTRAR a direita*/
+a.entrarDireita{
+  color: var(--topBar-text-color);
+  text-align: center;
+  text-decoration: none;
+}
+/*icones de valorant centralizados*/
+img.iconCentralizada{
+  margin: auto;
+}
+.topBarLogovalorant{
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  /*adcionado min e max parou de dar pulinho*/
+  max-height: 25px;
+  min-height: 25px;
+  margin: 0;
+}
+.centralizadaInterna {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 25px;
+  min-height: 25px;
+}
+.topNavMenuCenter{
+
+}
+/*Mudando a cor do Hover para da TOPBAR para ficar "invisivel"*/
+#logohover{
+  background-color: var(--topBar-background-color);
+
+}
+.logo {
+  width: 25px;
+  height: 25px;
+}
+.first {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--valorant-logo-color);
+  clip-path: polygon(0 10%, 70% 90%, 35% 90%, 0 50%);
+}
+.second {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--valorant-logo-color);
+  clip-path: polygon(100% 10%, 100% 50%, 88% 65%, 55% 65%);
+}
+/*top bar //FIM//*/
+
+/*Corpo da pagina com margem 0 e com fundo colorido*/
+body {
+  margin: 0px;
+  background-color: var(--body-background-color);
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s linear;
+}
+body.dark{
+  background-color: #EEEEEE;
+}
+/*alterando cor dos links*/
+a{
+  color: var(--link-color);
+}
+a:hover { 
+  color: var(--link-hover-color);
+}
+/*Titulos h1 sendo centralizados e coloridos*/
+h1{
+  text-align: center;
+  color: var(--h123-text-color);
+}
+/*cor do nome dos agentes*/
+.nomeAgenteColor{
+  color: var(--nomeAgente-text-color);
+}
+/*Centralizar imagem principal da pagina*/
+.flexDisplayCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Margem para o formulario do login*/
+#loginPageMargin{
+  margin-top: 80px;
+}
